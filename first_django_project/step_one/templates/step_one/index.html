@@ -1,0 +1,9 @@
+{% extends 'step_one/base_index.html' %}
+
+
+{% block content %}
+    <h1 class="mb-5">Posts:</h1>
+    {% for post in posts%}
+        {% include 'step_one/includes/post_card_template.html' %}
+    {% endfor %}
+{% endblock %}
